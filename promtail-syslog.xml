@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Promtail-Syslog</Name>
+  <Repository>mcjoppy/promtail-syslog</Repository>
+  <Registry>https://hub.docker.com/repository/docker/mcjoppy/promtail-syslog</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/McJoppy/unraid-templates/tree/main/promtail-syslog</Project>
+  <Overview>Run a remote syslog server which will send to Grafana Loki and can be used for routers, switches and other hardware that allows sending logs to remote syslog and not install and configure promtail directly.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/McJoppy/promtail-syslog/main/icon/grafana-loki.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1687008125</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Requires running Loki instance to forward the logs to</Requires>
+  <Config Name="Syslog TCP" Target="514" Default="1514" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1514</Config>
+  <Config Name="Syslog UDP" Target="514" Default="1514" Mode="udp" Description="" Type="Port" Display="always" Required="true" Mask="false">1514</Config>
+  <Config Name="Web UI" Target="9080" Default="9080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9080</Config>
+  <Config Name="Loki Client URL" Target="CLIENT_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
+
+
