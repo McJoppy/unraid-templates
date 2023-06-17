@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/McJoppy/unraid-templates/tree/main/promtail-syslog</Project>
+  <Project>https://github.com/McJoppy/promtail-syslog</Project>
   <Overview>Run a remote syslog server which will send to Grafana Loki and can be used for routers, switches and other hardware that allows sending logs to remote syslog and not install and configure promtail directly.</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:9080]</WebUI>
